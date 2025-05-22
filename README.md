@@ -59,7 +59,7 @@ This project demonstrates a **hardware-based voltage glitching attack** using an
 4. If the glitch is timed right, authentication is bypassed.
 
 ---
-🔧 Circuit
+## 🔧 Circuit
 ![WhatsApp Image 2025-05-23 at 00 50 00_bfc43788](https://github.com/user-attachments/assets/056beb58-e022-4d59-8fb1-afb596d407ef)
 **Basic Setup:**
 - ESP32 controls the glitch via a GPIO pin
@@ -69,7 +69,8 @@ This project demonstrates a **hardware-based voltage glitching attack** using an
 
 ---
 ## 🔄 Working
-https://youtu.be/4pfjF2fE4OM
+[![Watch the demo](https://img.youtube.com/vi/4pfjF2fE4OM/maxresdefault.jpg)](https://youtu.be/4pfjF2fE4OM)
+
 1. **Startup:**
    - ESP8266 initializes and waits for a password over Serial
    - ESP32 is idle until triggered
