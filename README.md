@@ -59,9 +59,32 @@ This project demonstrates a **hardware-based voltage glitching attack** using an
 4. If the glitch is timed right, authentication is bypassed.
 
 ---
-## Working
+🔧 Circuit
+![WhatsApp Image 2025-05-23 at 00 50 00_bfc43788](https://github.com/user-attachments/assets/056beb58-e022-4d59-8fb1-afb596d407ef)
+**Basic Setup:**
+- ESP32 controls the glitch via a GPIO pin
+- That pin is connected to the **EN pin** or **VCC** line of the ESP8266 (use a series resistor for safety)
+- Common ground between ESP32 and ESP8266
+- Serial connections for monitoring both boards independently
+
 ---
-## Circuit
+## 🔄 Working
+https://youtu.be/4pfjF2fE4OM
+1. **Startup:**
+   - ESP8266 initializes and waits for a password over Serial
+   - ESP32 is idle until triggered
+
+2. **Trigger:**
+   - ESP8266 reaches password check stage
+   - ESP32 either listens for a specific signal or delays for a precise window
+
+3. **Fault Injection:**
+   - ESP32 sends a fast LOW pulse to the EN or VCC of ESP8266
+   - This temporarily browns out the CPU without a full reboot
+
+4. **Result:**
+   - If the glitch is timed right, ESP8266 skips or corrupts the password check logic
+   - Serial shows access granted without correct password
 ---
 
 ## 🧾 Serial Output
