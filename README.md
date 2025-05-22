@@ -59,6 +59,10 @@ This project demonstrates a **hardware-based voltage glitching attack** using an
 4. If the glitch is timed right, authentication is bypassed.
 
 ---
+## Working
+---
+## Circuit
+---
 
 ## 🧾 Serial Output
 
