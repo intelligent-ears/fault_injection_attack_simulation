@@ -6,7 +6,8 @@ This project demonstrates a **hardware-based voltage glitching attack** using an
 
 ## 📷 Architecture
 
-![Architecture](docs/architecture.png)
+![image](https://github.com/user-attachments/assets/dc3ea403-de9d-4ba6-8a17-c770a9361180)
+
 
 ---
 
@@ -36,8 +37,6 @@ This project demonstrates a **hardware-based voltage glitching attack** using an
 - 1 × ESP8266 NodeMCU (or equivalent)
 - Common GND connection
 - Jumper Wires
-- Optional: Capacitor for stabilizing ESP8266
-- Optional: Voltage regulator or series resistor if not directly glitching VCC
 
 ---
 
