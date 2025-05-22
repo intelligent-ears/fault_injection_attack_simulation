@@ -67,3 +67,10 @@ This project demonstrates a **hardware-based voltage glitching attack** using an
 - Use any serial monitor (Arduino IDE, PuTTY, minicom)
 
 ---
+
+## 📜 Disclaimer
+
+> ⚠️ This project is for educational purposes only. Unauthorized tampering with hardware may be illegal or violate terms of use.
+
+---
+
